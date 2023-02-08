@@ -1,5 +1,5 @@
 * {
-    font-family: 'Rubik' sans-serif;
+    font-family: 'Itim', 'cursive';
 }
 
 html {
@@ -13,18 +13,22 @@ html {
     width: 99.1%;
     margin-left: -10px;
     margin-top: -10px;
-    padding: 15px;
+    margin-right: -30px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 30px;
+    font-size: 25px;
 }
 
 .avatar {
-    width: 550px;
+    width: 510px;
 }
 
 .textContentDiv {
     display: inline;
     position: absolute;
-    margin-top: 150px;
-    font-size: 30px;
+    margin-top: 110px;
+    font-size: 35px;
     color: white;
     text-align: center;
     width: 700px;
@@ -40,7 +44,7 @@ html {
     background-color: sienna;
     border-radius: 15px;
     padding: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 21px;
 }
 
 .phenom_JTitleDiv {
