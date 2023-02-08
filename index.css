@@ -22,7 +22,24 @@ html {
 
 .avatar {
     width: 510px;
-}
+    animation-duration: 4s;
+    animation-name: slidein;
+}  
+  @keyframes slidein {
+    from {
+      margin-left: 5%;
+      margin-top: 70%;
+      width: 100%;
+      size: 510px;
+    }
+  
+    to {
+      margin-left: 5%;
+      width: 100%;
+      size: 510px;
+    }
+  }
+  
 
 .textContentDiv {
     display: inline;
@@ -35,7 +52,25 @@ html {
     background-color: black;
     border-radius: 15px;
     padding: 21px;
+    animation-name: slidein;
+    animation-duration: 4s;
+    animation-direction: alternate;
 }
+    @keyframes slidein {
+        from {
+        margin-left: 5%;
+        margin-top: 70%;
+        width: 100%;
+        size: 510px;
+        }
+
+        to {
+        margin-left: 5%;
+        width: 100%;
+        size: 510px;
+        }
+  }
+
 .avatarDiv {
     display: inline-block;
 }
