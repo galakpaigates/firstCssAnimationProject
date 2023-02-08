@@ -19,6 +19,19 @@ html {
     padding-right: 30px;
     font-size: 25px;
 }
+@keyframes slidein {
+    from {
+      margin-left: 5%;
+      margin-top: 70%;
+      width: 100%;
+      size: 510px;
+    }
+  
+    to {
+      margin-left: 5%;
+      width: 100%;
+    }
+}
 
 .avatar {
     width: 510px;
@@ -52,22 +65,22 @@ html {
     background-color: black;
     border-radius: 15px;
     padding: 21px;
-    animation-name: slidein;
+    animation-name: rotate;
     animation-duration: 4s;
-    animation-direction: alternate;
 }
-    @keyframes slidein {
+    @keyframes rotate {
         from {
         margin-left: 5%;
         margin-top: 70%;
-        width: 100%;
-        size: 510px;
+        width: 70%;
+        margin-right: 40%;
+        size: 10px;
         }
 
         to {
         margin-left: 5%;
         width: 100%;
-        size: 510px;
+        size: 10px;
         }
   }
 
