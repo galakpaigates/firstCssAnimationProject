@@ -68,7 +68,7 @@ html {
     animation-name: rotate;
     animation-duration: 4s;
 }
-    @keyframes rotate {
+    @keyframes slidein {
         from {
         margin-left: 5%;
         margin-top: 70%;
