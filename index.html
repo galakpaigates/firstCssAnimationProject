@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-</head>
+</head> 
 <body>
     <header>
         <div class="headerDiv">
@@ -39,6 +39,44 @@
             </span>
         </div>
     </div>
+
+    <div class="contactPhenomJDiv">
+        <button class="contactPhenomJBtn">
+            Connect
+        </button>
+    </div>
+
+    <div class="otherContacts" style="display: none; text-align: center;">
+        <div style="display: inline; text-align: center;">
+                <a href="https://facebook.com/phenomJ/" target="_blank">
+                    <button class="facebookLink">Facebook</button>
+                </a>
+        </div>
+
+        <div style="display: inline; text-align: center;">
+                <a href="https://instagram.com/phenom_Jic/" target="_blank">
+                    <button class="instaLink">Instagram</button>
+                </a>
+        </div>
+
+        <div style="display: inline; text-align: center;">
+                <a href="https://github.com/galakpaigates/" target="_blank">
+                    <button class="gitHubLink">GitHub</button>
+                </a>
+        </div>
+    </div>
     </main>
+
+    <script>
+        document.querySelector(".contactPhenomJBtn").onclick = function otherContacts() {
+            if (document.querySelector(".otherContacts").style.display == "none") {
+                document.querySelector(".otherContacts").style.display = "list-item"
+            }
+
+            else {
+                document.querySelector(".otherContacts").style.display = "none"
+            };
+        }
+    </script>
 </body>
 </html>

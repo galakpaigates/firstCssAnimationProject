@@ -4,8 +4,15 @@
 
 html {
     background-color: sienna;
+    animation-name: rotateZ;
+    animation-duration: 1.3s;
+    transition-property: all;
 }
 
+@keyframes rotateZ {
+  0% {transform: rotateZ(360deg);}
+}
+ 
 .headerDiv {
     background-color: black;
     color: white;
@@ -18,70 +25,53 @@ html {
     padding-bottom: 1px;
     padding-right: 30px;
     font-size: 25px;
+    animation-duration: 3s;
+    animation-name: headerDiv;
+    animation-fill-mode: forwards;
 }
-@keyframes slidein {
-    from {
-      margin-left: 5%;
-      margin-top: 70%;
-      width: 100%;
-      size: 510px;
-    }
-  
-    to {
-      margin-left: 5%;
-      width: 100%;
-    }
+
+@keyframes headerDiv {
+    0% {opacity: 0; margin-top: -200px;}
+    100% {opacity: 1;}
 }
 
 .avatar {
-    width: 510px;
-    animation-duration: 4s;
-    animation-name: slidein;
+    width: 550px;
+    margin-left: 10px;
+    animation-duration: 3s;
+    animation-name: avatar;
+    animation-fill-mode: forwards;
+    transition-property: all;
+    transition-duration: 1.5s;
 }  
-  @keyframes slidein {
-    from {
-      margin-left: 5%;
-      margin-top: 70%;
-      width: 100%;
-      size: 510px;
-    }
-  
-    to {
-      margin-left: 5%;
-      width: 100%;
-      size: 510px;
-    }
+  @keyframes avatar {
+    0% {opacity: 0; margin-left: -100px; transform: rotateZ(-360deg);}
+    100% {opacity: 1;}
   }
-  
+
+.avatar:hover {
+  transform: rotateZ(360deg);
+}
 
 .textContentDiv {
     display: inline;
     position: absolute;
-    margin-top: 110px;
+    margin-top: 100px;
     font-size: 35px;
     color: white;
     text-align: center;
-    width: 700px;
+    width: 45%;
     background-color: black;
     border-radius: 15px;
     padding: 21px;
-    animation-name: rotate;
-    animation-duration: 4s;
+    margin-left: 0px;
+    animation-name: textContentDiv;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
-    @keyframes slidein {
-        from {
-        margin-left: 5%;
-        margin-top: 70%;
-        width: 70%;
-        margin-right: 40%;
-        size: 10px;
-        }
-
-        to {
-        margin-left: 5%;
-        width: 100%;
-        size: 10px;
-        }
+    @keyframes textContentDiv {
+      0% {opacity: 0; margin-left: 700px;}
+      100% {opacity: 1;}
   }
 
 .avatarDiv {
@@ -100,3 +90,66 @@ html {
     border-radius: 15px;
     padding: 12px;
 }
+
+.contactPhenomJDiv {
+  text-align: center;
+  margin-top: -50px;
+}
+
+.contactPhenomJBtn {
+  background-color: white;
+  color: sienna;
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  font-weight: bold;
+  transition-property: all;
+  transition-duration: 3s;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.otherContacts {
+  margin-bottom: 35px;
+  animation-name: otherContactsOpaque;
+  transition-property: all;
+  animation-duration: 1.5s;
+}
+
+@keyframes otherContactsOpaque {
+  0% {opacity: 0; margin-top: 30px;}
+  100% {opacity: 1;}
+}
+
+.facebookLink {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-right: 30px;
+}
+
+.instaLink {
+  background-color:indianred;
+  color: white;
+  border: none;
+  margin-right: 30px;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.gitHubLink {
+  background-color: rgb(26, 24, 24);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: bold;
+}
+
