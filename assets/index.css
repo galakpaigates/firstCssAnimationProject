@@ -7,10 +7,12 @@ html {
     animation-name: rotateZ;
     animation-duration: 1.3s;
     transition-property: all;
+    animation-fill-mode: forwards;
 }
 
 @keyframes rotateZ {
-  0% {transform: rotateZ(360deg);}
+  0% {margin-top: -700px;}
+  100% {}
 }
  
 .headerDiv {
@@ -45,13 +47,9 @@ html {
     transition-duration: 1.5s;
 }  
   @keyframes avatar {
-    0% {opacity: 0; margin-left: -100px; transform: rotateZ(-360deg);}
+    0% {opacity: 0; margin-left: -500px; transform: rotateZ(-100deg);}
     100% {opacity: 1;}
   }
-
-.avatar:hover {
-  transform: rotateZ(360deg);
-}
 
 .textContentDiv {
     display: inline;
